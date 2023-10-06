@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+# /usr/bin/env python3
 
 help = """The script helps to convert C/C++ sources to C/C++ -like Python sources.
 
@@ -117,7 +117,7 @@ def process_line(line):
     """
     line = re.sub('&&', 'and', line)
 
-    """ replace '!' with 'not '
+    """ replace '*' with 'not '
 
         if !boolvar
               V
@@ -318,3 +318,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+ 
